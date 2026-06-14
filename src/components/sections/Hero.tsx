@@ -66,7 +66,7 @@ export function Hero({ role }: HeroProps) {
   const initials = profile.name.split(' ').map(w => w[0]).join('')
 
   return (
-    <section className="bg-gradient-to-br from-slate-50 via-white to-teal-50 pt-20 pb-16 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-slate-50 via-white to-teal-50 pt-20 pb-16 relative overflow-hidden shadow-[0_4px_32px_0_rgba(0,0,0,0.12)]">
       <div className="absolute -top-16 -right-16 w-72 h-72 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40 pointer-events-none" />
       <div className="absolute -bottom-16 -left-16 w-72 h-72 bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 pointer-events-none" />
 
@@ -77,12 +77,9 @@ export function Hero({ role }: HeroProps) {
             <span className={`inline-flex items-center text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5 ${accent.pill}`}>
               {role.data.hero.title}
             </span>
-            <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight mb-3 bg-gradient-to-r from-slate-800 to-teal-700 bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight mb-8 bg-gradient-to-r from-slate-800 to-teal-700 bg-clip-text text-transparent">
               {profile.name}
             </h1>
-            <p className={`text-sm font-medium mb-7 ${accent.text}`}>
-              IT Background · English &amp; Thai · Agile | Scrum | Waterfall
-            </p>
 
             <div className="flex flex-col gap-2.5 mb-8">
               <a

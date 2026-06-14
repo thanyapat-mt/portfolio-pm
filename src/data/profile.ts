@@ -6,14 +6,13 @@ export const profile = {
   website: '',
   linkedin: 'https://www.linkedin.com/in/thanyapat-mt0928/',
   github: 'https://github.com/thanyapat-mt',
-  languages: ['Thai (Native)', 'English (Professional Working Proficiency)'],
+  languages: ['Thai (Native)', 'English'],
   education: [
     {
       degree: 'Bachelor of Science — Information Technology',
       institution: "King Mongkut's University of Technology North Bangkok (KMUTNB)",
       short: 'KMUTNB',
-      period: 'Jul 2023 – Oct 2025',
-      coursework: 'Software Project Management · Systems Analysis & Design · Database Systems · UX/UI Design',
+      period: 'Jul 2023 – Oct 2025'
     },
   ],
 }
