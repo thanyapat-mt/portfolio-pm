@@ -33,36 +33,57 @@ function PinIcon() {
   )
 }
 
+function LinkedInIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  )
+}
+
 export function Contact({ role }: ContactProps) {
   const { accent } = role
 
   return (
-    <Section id="contact">
+    <Section id="contact" className="bg-slate-900">
       <SectionHeading accent={accent.text}>Contact</SectionHeading>
-      <div className={`rounded-2xl border ${accent.border} overflow-hidden`}>
+      <div className={`rounded-2xl border ${accent.border} overflow-hidden bg-slate-950/50`}>
         <div className={`${accent.bg} h-1.5 w-full`} />
         <div className="p-8 sm:p-10">
           <div className="text-center mb-8">
-            <p className="text-2xl font-extrabold text-gray-900">{profile.name}</p>
+            <p className="text-2xl font-extrabold text-white">{profile.name}</p>
             <p className={`text-sm font-semibold mt-1 ${accent.text}`}>{role.name}</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 flex-wrap">
             <a
               href={`mailto:${profile.email}`}
-              className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-white border ${accent.border} text-sm text-gray-700 hover:shadow-sm transition-shadow`}
+              className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-300 hover:border-sky-700 hover:text-white transition-colors`}
             >
               <span className={accent.text}><MailIcon /></span>
               {profile.email}
             </a>
-            <div className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-white border ${accent.border} text-sm text-gray-700`}>
+            <div className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-300`}>
               <span className={accent.text}><PhoneIcon /></span>
               {profile.phone}
             </div>
-            <div className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-white border ${accent.border} text-sm text-gray-700`}>
+            <div className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-300`}>
               <span className={accent.text}><PinIcon /></span>
               {profile.location}
             </div>
+            {profile.linkedin && (
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-300 hover:border-sky-700 hover:text-white transition-colors`}
+              >
+                <span className={accent.text}><LinkedInIcon /></span>
+                LinkedIn
+              </a>
+            )}
           </div>
 
           <div className="text-center">
@@ -70,19 +91,6 @@ export function Contact({ role }: ContactProps) {
               Send a message
             </Button>
           </div>
-
-          {profile.website && (
-            <p className="text-center mt-4">
-              <a
-                href={profile.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-sm ${accent.text} hover:underline`}
-              >
-                {profile.website}
-              </a>
-            </p>
-          )}
         </div>
       </div>
     </Section>

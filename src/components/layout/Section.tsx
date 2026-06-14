@@ -17,11 +17,11 @@ interface SectionHeadingProps {
   accent?: string
 }
 
-export function SectionHeading({ children, accent = 'text-white' }: SectionHeadingProps) {
+export function SectionHeading({ children }: SectionHeadingProps) {
   return (
     <div className="mb-8">
-      <h2 className={`text-2xl font-bold text-white`}>{children}</h2>
-      <div className={`mt-2 h-0.5 w-12 rounded-full ${accent.replace('text-', 'bg-')}`} />
+      <h2 className="text-2xl font-bold text-white">{children}</h2>
+      <div className="mt-2 h-0.5 w-12 rounded-full bg-sky-500" />
     </div>
   )
 }
