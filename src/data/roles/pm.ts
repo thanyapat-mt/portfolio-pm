@@ -81,5 +81,15 @@ export const pmData: RolePortfolio = {
       ],
       tags: ['Project Management', 'Agile / Scrum', 'User Research', 'BRD', 'UX/UI', 'Next.js', 'React', 'Node.js (Elysia)', 'Prisma', 'MySQL'],
     },
+    {
+      name: 'Who Pay? — Bill Randomizer',
+      summary: 'Side Project · Scope Definition & Single-Sprint Delivery',
+      bullets: [
+        'Defined and delivered a focused v1 product from scratch: scoped 3 user stories with acceptance criteria, identified and documented explicit out-of-scope items (weighted probability, multi-group support, split billing), and shipped within a single sprint cycle.',
+        'Managed scope discipline by cutting weighted-randomization from v1 — documenting the rationale (complexity vs. user trust trade-off) and flagging it as a v2 hypothesis to validate with real users post-launch.',
+        'Coordinated the full product lifecycle solo — problem definition, requirements, design decisions, and technical delivery — demonstrating end-to-end PM ownership from discovery to a shipped, mobile-ready application.',
+      ],
+      tags: ['Project Scoping', 'MVP Delivery', 'Scope Management', 'Agile', 'React', 'TypeScript', 'Tailwind CSS'],
+    },
   ],
 }
