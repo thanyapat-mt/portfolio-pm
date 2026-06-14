@@ -3,12 +3,12 @@ import { pmData } from './roles/pm'
 import { poData } from './roles/po'
 
 const pmAccent: RoleAccent = {
-  bg: 'bg-sky-500',
-  text: 'text-sky-400',
-  pill: 'bg-sky-950 text-sky-300 border border-sky-800',
-  border: 'border-sky-700',
-  button: 'bg-sky-500 hover:bg-sky-400 text-slate-900 font-bold shadow-md hover:shadow-sky-500/25 hover:shadow-lg transition-all',
-  light: 'bg-slate-900',
+  bg: 'bg-blue-600',
+  text: 'text-blue-600',
+  pill: 'bg-blue-100 text-blue-700',
+  border: 'border-blue-200',
+  button: 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md hover:shadow-lg',
+  light: 'bg-gradient-to-br from-blue-50 to-indigo-50',
 }
 
 const poAccent: RoleAccent = {

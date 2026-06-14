@@ -9,6 +9,17 @@ export const pmData: RolePortfolio = {
   },
   summary:
     'Results-driven Junior Project Manager with an IT background, specializing in end-to-end project lifecycle management, cross-functional team coordination, and stakeholder engagement. Demonstrated ability to translate business requirements into actionable project plans, manage scope and deliverables on schedule, and drive data-driven decisions using Agile/Scrum methodologies. Proven track record in requirements gathering, backlog management, and delivering full-stack solutions on time within resource constraints.',
+  competencies: [
+    'Project Planning & Scheduling',
+    'Requirements Analysis & BRD',
+    'Agile / Scrum Methodology',
+    'Scope & Risk Management',
+    'Stakeholder Communication',
+    'Waterfall Project Delivery',
+    'Cross-functional Team Leadership',
+    'Backlog Prioritization',
+    'Sprint Planning & Tracking',
+  ],
   skillGroups: [
     {
       label: 'Project Management',
@@ -70,10 +81,5 @@ export const pmData: RolePortfolio = {
       ],
       tags: ['Project Management', 'Agile / Scrum', 'User Research', 'BRD', 'UX/UI', 'Next.js', 'React', 'Node.js (Elysia)', 'Prisma', 'MySQL'],
     },
-  ],
-  highlights: [
-    { metric: '50+', label: 'Users Interviewed' },
-    { metric: '15+', label: 'User Stories Delivered' },
-    { metric: '100+', label: 'CRM Records Cleaned' },
   ],
 }

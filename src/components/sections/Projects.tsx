@@ -12,19 +12,19 @@ export function Projects({ role }: ProjectsProps) {
   const { accent } = role
 
   return (
-    <Section id="projects">
+    <Section id="projects" className={accent.light}>
       <SectionHeading accent={accent.text}>Key Projects</SectionHeading>
       <div className={`grid gap-5 ${projects.length === 1 ? '' : 'sm:grid-cols-2'}`}>
         {projects.map((project) => (
           <Card key={project.name}>
-            <h3 className="font-bold text-white mb-1">{project.name}</h3>
+            <h3 className="font-bold text-gray-900 mb-1">{project.name}</h3>
             {project.summary && (
               <p className={`text-xs font-medium mb-4 ${accent.text}`}>{project.summary}</p>
             )}
             {project.bullets && project.bullets.length > 0 ? (
               <ul className="mb-4 space-y-2">
                 {project.bullets.map((bullet, i) => (
-                  <li key={i} className="text-sm text-slate-400 flex gap-2">
+                  <li key={i} className="text-sm text-gray-600 flex gap-2">
                     <span className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${accent.bg}`} />
                     {bullet}
                   </li>

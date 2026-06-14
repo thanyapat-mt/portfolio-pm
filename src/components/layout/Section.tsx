@@ -17,11 +17,11 @@ interface SectionHeadingProps {
   accent?: string
 }
 
-export function SectionHeading({ children }: SectionHeadingProps) {
+export function SectionHeading({ children, accent = 'text-gray-900' }: SectionHeadingProps) {
   return (
     <div className="mb-8">
-      <h2 className="text-2xl font-bold text-white">{children}</h2>
-      <div className="mt-2 h-0.5 w-12 rounded-full bg-sky-500" />
+      <h2 className={`text-2xl font-bold ${accent}`}>{children}</h2>
+      <div className="mt-2 h-0.5 w-12 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500" />
     </div>
   )
 }

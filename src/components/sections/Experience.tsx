@@ -10,7 +10,7 @@ export function Experience({ role }: ExperienceProps) {
   const { accent } = role
 
   return (
-    <Section id="experience" className="bg-slate-900">
+    <Section id="experience">
       <SectionHeading accent={accent.text}>Work Experience</SectionHeading>
       <div className="space-y-10">
         {experience.map((exp, i) => (
@@ -18,21 +18,21 @@ export function Experience({ role }: ExperienceProps) {
             <div className="flex flex-col items-center">
               <div className={`w-3 h-3 rounded-full mt-1.5 flex-shrink-0 ${accent.bg}`} />
               {i < experience.length - 1 && (
-                <div className={`w-px flex-1 mt-2 border-l-2 border-slate-700`} />
+                <div className={`w-px flex-1 mt-2 ${accent.border} border-l-2`} />
               )}
             </div>
             <div className="pb-2">
               <div className="flex flex-wrap items-baseline gap-2 mb-1">
-                <h3 className="font-bold text-white">{exp.role}</h3>
-                <span className="text-slate-600 text-sm">·</span>
-                <span className="text-sm text-slate-400">{exp.company}</span>
+                <h3 className="font-bold text-gray-900">{exp.role}</h3>
+                <span className="text-gray-400 text-sm">·</span>
+                <span className="text-sm text-gray-500">{exp.company}</span>
                 <span className={`text-xs font-medium px-2 py-0.5 rounded-full ml-1 ${accent.pill}`}>
                   {exp.period}
                 </span>
               </div>
               <ul className="mt-3 space-y-2">
                 {exp.bullets.map((bullet, j) => (
-                  <li key={j} className="text-sm text-slate-400 flex gap-2">
+                  <li key={j} className="text-sm text-gray-600 flex gap-2">
                     <span className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${accent.bg}`} />
                     {bullet}
                   </li>

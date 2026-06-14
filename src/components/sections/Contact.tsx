@@ -47,29 +47,29 @@ export function Contact({ role }: ContactProps) {
   const { accent } = role
 
   return (
-    <Section id="contact" className="bg-slate-900">
+    <Section id="contact">
       <SectionHeading accent={accent.text}>Contact</SectionHeading>
-      <div className={`rounded-2xl border ${accent.border} overflow-hidden bg-slate-950/50`}>
+      <div className={`rounded-2xl border ${accent.border} overflow-hidden`}>
         <div className={`${accent.bg} h-1.5 w-full`} />
         <div className="p-8 sm:p-10">
           <div className="text-center mb-8">
-            <p className="text-2xl font-extrabold text-white">{profile.name}</p>
+            <p className="text-2xl font-extrabold text-gray-900">{profile.name}</p>
             <p className={`text-sm font-semibold mt-1 ${accent.text}`}>{role.name}</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 flex-wrap">
             <a
               href={`mailto:${profile.email}`}
-              className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-300 hover:border-sky-700 hover:text-white transition-colors`}
+              className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-white border ${accent.border} text-sm text-gray-700 hover:shadow-sm transition-shadow`}
             >
               <span className={accent.text}><MailIcon /></span>
               {profile.email}
             </a>
-            <div className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-300`}>
+            <div className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-white border ${accent.border} text-sm text-gray-700`}>
               <span className={accent.text}><PhoneIcon /></span>
               {profile.phone}
             </div>
-            <div className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-300`}>
+            <div className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-white border ${accent.border} text-sm text-gray-700`}>
               <span className={accent.text}><PinIcon /></span>
               {profile.location}
             </div>
@@ -78,7 +78,7 @@ export function Contact({ role }: ContactProps) {
                 href={profile.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-300 hover:border-sky-700 hover:text-white transition-colors`}
+                className={`flex items-center gap-2.5 px-5 py-3 rounded-xl bg-white border ${accent.border} text-sm text-gray-700 hover:shadow-sm transition-shadow`}
               >
                 <span className={accent.text}><LinkedInIcon /></span>
                 LinkedIn

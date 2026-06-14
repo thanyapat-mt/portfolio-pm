@@ -31,6 +31,7 @@ export interface RolePortfolio {
     intro: string
   }
   summary: string
+  competencies?: string[]
   skillGroups: SkillGroup[]
   tools: string[]
   experience: Experience[]
