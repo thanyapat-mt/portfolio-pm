@@ -21,7 +21,7 @@ export function SectionHeading({ children, accent = 'text-gray-900' }: SectionHe
   return (
     <div className="mb-8">
       <h2 className={`text-2xl font-bold ${accent}`}>{children}</h2>
-      <div className="mt-2 h-0.5 w-12 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500" />
+      <div className="mt-2 h-0.5 w-12 rounded-full bg-gradient-to-r from-slate-400 to-teal-500" />
     </div>
   )
 }

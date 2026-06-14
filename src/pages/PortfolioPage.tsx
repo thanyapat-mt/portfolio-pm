@@ -7,7 +7,6 @@ import { About } from '../components/sections/About'
 import { Skills } from '../components/sections/Skills'
 import { Experience } from '../components/sections/Experience'
 import { Projects } from '../components/sections/Projects'
-import { CoreCompetencies } from '../components/sections/CoreCompetencies'
 import { Contact } from '../components/sections/Contact'
 
 export function PortfolioPage() {
@@ -21,8 +20,7 @@ export function PortfolioPage() {
       <main className="flex-1">
         <Hero role={PM_ROLE} />
         <About role={PM_ROLE} />
-        <CoreCompetencies role={PM_ROLE} />
-        <Skills role={PM_ROLE} />
+<Skills role={PM_ROLE} />
         <Experience role={PM_ROLE} />
         <Projects role={PM_ROLE} />
         <Contact role={PM_ROLE} />

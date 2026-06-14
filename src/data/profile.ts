@@ -4,7 +4,7 @@ export const profile = {
   phone: '+66 63-249-4247',
   location: 'Bangkok, Thailand',
   website: '',
-  linkedin: 'https://www.linkedin.com/in/thanyapat-mt0928',
+  linkedin: 'https://www.linkedin.com/in/thanyapat-mt0928/',
   github: 'https://github.com/thanyapat-mt',
   languages: ['Thai (Native)', 'English (Professional Working Proficiency)'],
   education: [

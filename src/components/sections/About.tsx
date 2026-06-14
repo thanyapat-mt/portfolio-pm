@@ -9,7 +9,7 @@ interface AboutProps {
 export function About({ role }: AboutProps) {
   return (
     <Section id="about">
-      <SectionHeading accent={role.accent.text}>Professional Summary</SectionHeading>
+      <SectionHeading accent={role.accent.text}>About Me</SectionHeading>
       <div className="grid sm:grid-cols-3 gap-8">
         <div className="sm:col-span-2">
           <p className="text-gray-600 leading-relaxed text-base">{role.data.summary}</p>

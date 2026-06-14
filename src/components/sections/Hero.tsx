@@ -66,9 +66,9 @@ export function Hero({ role }: HeroProps) {
   const initials = profile.name.split(' ').map(w => w[0]).join('')
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 via-white to-indigo-100 pt-20 pb-16 relative overflow-hidden">
-      <div className="absolute -top-16 -right-16 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 pointer-events-none" />
-      <div className="absolute -bottom-16 -left-16 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 pointer-events-none" />
+    <section className="bg-gradient-to-br from-slate-50 via-white to-teal-50 pt-20 pb-16 relative overflow-hidden">
+      <div className="absolute -top-16 -right-16 w-72 h-72 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40 pointer-events-none" />
+      <div className="absolute -bottom-16 -left-16 w-72 h-72 bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 relative">
         <div className="flex items-center justify-between gap-10">
@@ -77,7 +77,7 @@ export function Hero({ role }: HeroProps) {
             <span className={`inline-flex items-center text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5 ${accent.pill}`}>
               {role.data.hero.title}
             </span>
-            <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight mb-3 bg-gradient-to-r from-blue-700 to-indigo-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight mb-3 bg-gradient-to-r from-slate-800 to-teal-700 bg-clip-text text-transparent">
               {profile.name}
             </h1>
             <p className={`text-sm font-medium mb-7 ${accent.text}`}>
@@ -140,9 +140,9 @@ export function Hero({ role }: HeroProps) {
           </div>
 
           <div className="hidden sm:flex flex-shrink-0 items-center justify-center animate-float">
-            <div className="w-40 h-40 rounded-full p-1 bg-gradient-to-br from-blue-400 to-indigo-600 shadow-lg">
+            <div className="w-40 h-40 rounded-full p-1 bg-gradient-to-br from-slate-700 to-teal-600 shadow-lg">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                <span className="text-4xl font-black tracking-tight bg-gradient-to-br from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                <span className="text-4xl font-black tracking-tight bg-gradient-to-br from-slate-800 to-teal-700 bg-clip-text text-transparent">
                   {initials}
                 </span>
               </div>

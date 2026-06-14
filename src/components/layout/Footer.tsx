@@ -3,7 +3,7 @@ import { profile } from '../../data/profile'
 export function Footer() {
   return (
     <footer className="mt-16">
-      <div className="h-px bg-gradient-to-r from-blue-400 to-indigo-500" />
+      <div className="h-px bg-gradient-to-r from-slate-300 to-teal-400" />
       <div className="py-8">
         <div className="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-sm text-gray-400">
           <span>{profile.name} · {profile.location}</span>
