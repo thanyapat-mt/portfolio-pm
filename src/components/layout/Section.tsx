@@ -1,0 +1,27 @@
+interface SectionProps {
+  id?: string
+  children: React.ReactNode
+  className?: string
+}
+
+export function Section({ id, children, className = '' }: SectionProps) {
+  return (
+    <section id={id} className={`py-16 ${className}`}>
+      <div className="max-w-4xl mx-auto px-6">{children}</div>
+    </section>
+  )
+}
+
+interface SectionHeadingProps {
+  children: React.ReactNode
+  accent?: string
+}
+
+export function SectionHeading({ children, accent = 'text-white' }: SectionHeadingProps) {
+  return (
+    <div className="mb-8">
+      <h2 className={`text-2xl font-bold text-white`}>{children}</h2>
+      <div className={`mt-2 h-0.5 w-12 rounded-full ${accent.replace('text-', 'bg-')}`} />
+    </div>
+  )
+}
